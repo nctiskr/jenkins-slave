@@ -1,4 +1,4 @@
-FROM docker:17.06.0-ce
+FROM docker:17.07.0-ce
 
 RUN apk --update add ca-certificates wget openjdk8-jre git \
     && update-ca-certificates \
