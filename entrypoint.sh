@@ -6,4 +6,4 @@ EXECUTORS="${EXECUTORS:-3}"
 FSROOT="${FSROOT:-/tmp/jenkins}"
 
 mkdir -p $FSROOT
-java -jar swarm-client.jar -labels=$LABELS -executors=$EXECUTORS -fsroot=/tmp/jenkins -name=docker-$(hostname) -master=$JENKINS_ADDR -username=$JENKINS_USER -password=$JENKINS_PASS
+java -jar swarm-client.jar -labels=$LABELS -executors=$EXECUTORS -fsroot=$FSROOT -name=docker-$(hostname) -master=$JENKINS_ADDR -username=$JENKINS_USER -password=$JENKINS_PASS
